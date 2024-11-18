@@ -72,7 +72,10 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+<<<<<<< HEAD
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:C:\Users\tjges\OneDrive\Documents\bap_bms\AD_code}&quot;"/>
+=======
+>>>>>>> e97880310f3a4eeae74193c2c9dce49706dda43c
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/AD_code}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.1114443492" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp"/>
@@ -133,7 +136,10 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
+<<<<<<< HEAD
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:C:\Users\tjges\OneDrive\Documents\bap_bms\AD_code}&quot;"/>
+=======
+>>>>>>> e97880310f3a4eeae74193c2c9dce49706dda43c
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/AD_code}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.1886764239" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp"/>
