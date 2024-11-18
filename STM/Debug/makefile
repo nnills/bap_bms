@@ -84,8 +84,8 @@ all: main-build
 main-build: BMS_Master.elf secondary-outputs
 
 # Tool invocations
-BMS_Master.elf BMS_Master.map: $(OBJS) $(USER_OBJS) C:\Users\tjges\OneDrive\Documents\bap_bms\STM\STM32H753ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "BMS_Master.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\tjges\OneDrive\Documents\bap_bms\STM\STM32H753ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMS_Master.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+BMS_Master.elf BMS_Master.map: $(OBJS) $(USER_OBJS) C:\Users\nils\Documents\BAP\bap_bms\STM\STM32H753ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "BMS_Master.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\nils\Documents\BAP\bap_bms\STM\STM32H753ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMS_Master.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
