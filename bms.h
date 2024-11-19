@@ -1,12 +1,29 @@
 // The header file for BMS functions and structs
 
-#include "stdint.h"
+#include "ADBMS1818.h"
 
-struct slaveReadout
-{
-    uint16_t cells[18] = {0};
-    uint16_t temperature[16] = {0};
-    uint16_t current = 0;
-    int16_t current_ma = 0;
-};
+#define maxTrials 3
 
+
+cell_asic slaves[32]
+uint8_t slavesNumber = 0;
+uint8_t ISenseSlave = -1;
+
+void hvRelayOpen();
+void hvRelayRelease();
+void commFail();
+
+int checkOvpUvp(uint8_t total_ic, cell_asic *ic);
+
+uint8_t findISenseSlave(uint8_t total_ic, cell_asic *ic);
+
+uint8_t countSlaves();
+
+
+#define tryComm(f)\
+    for(int i = 0; i < maxTrials; i++){\
+        if(f != 0){break;}\
+        if(i == (maxTrials - 1)) {\
+            commFail();\
+        }\
+    }
