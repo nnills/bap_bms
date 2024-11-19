@@ -96,6 +96,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	// FUCK GIT
 
   /* USER CODE END 1 */
 
